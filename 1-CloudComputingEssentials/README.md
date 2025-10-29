@@ -4,35 +4,46 @@
 Improve website reliability by migrating to Amazon S3 static web hosting.
 
 * Amazon S3 provides storage and retrieval of any amount of data from anywhere on the web.
+
 ![S3](images/s3-1.png)
 
 * In Amazon S3, data is stored as objects (files and their associated metadata) within containers called buckets.
+
 ![S3](images/s3-2.png)
 
 * This solution uses an S3 bucket to host a static website, capable of handling unlimited traffic volumes cost-effectively, removing the need for traditional web server management.
+
+
 ![S3](images/s3-3.png)
 
 * The S3 bucket stores both the HTML file and supporting assets (such as client-side scripts and style sheets) required for website functionality. Any S3 bucket can be enabled for static wesite hosting.
+
 ![S3](images/s3-4.png)
 
 * When configured for website hosting, the S3 bucket receives a dedicated URL.Requests to this URL, propmpt Amazon S3 to server the bucket's designated root object (typically the main HTML file).
+
 ![S3](images/s3-5.png)
 
 * Access to the S3 bucket and its contents is controlled through permissions, which are defined in a bucket policy.
+
 ![S3](images/s3-6.png)
 
 * A bucket policy. written in JSON format, specifies who can access the bucket and what operations they can perform.
+
 ![S3](images/s3-7.png)
 
 
 * JSON is a standarized data format that's both humane-readable and machine-readable, widely used across AWS services and applications.
+
 ![S3](images/s3-8.png)
 
 
 * When a city residents access the web portal for beachwave information, their browsers send GET requests to the static webpage's URL, which serves the index.html root object.
+
 ![S3](images/s3-9.png)
 
 * The root object can be renamed from index.html to waves.html, with S3 bucket settings updated accordingly to reference the new filename.
+
 ![S3](images/s3-10.png)
 
 # Practice
