@@ -20,3 +20,14 @@ Is a fully managed, highly scalable and high performance Container orchestration
 For more control you can run your containr workloads on EC2 instances. Or use AWS Fargate that is a serverless service.
 Amazon ECS Anywhere Enables you to run apps in both the cloud and on premise.
 You can use Amazon ECS when you require low latencies to on premise.
+
+Key benefits:
+* Scalability and CI/CD integration: Amazon ECS enables you to manage your entire online enterprise apps.
+* Save on compute costs: with autonomous provisioning, auto scaling and pay as you go pricing.
+* Seamless AWS integration: with management and governance solutions.
+
+Key Components:
+- Tak definition: text file that describes how one or more containers should launch, container image, Launch type? AWS Fargate/AWS EC2. Which ports should be opened? And what data volumes use?.
+- Task: instance of a task definition, batch processing jobs.
+- Service: maintain a specified # of tasks running simoultaniously (long running tasks and app). Launch by Amazon ECS scheduler.
+- Amazon ECS cluster: logical grouping of tasks or services.
